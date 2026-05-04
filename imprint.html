@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imprint</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1814;
+      --muted: #6b6760;
+      --rule: #d8d4ce;
+      --bg: #f9f7f4;
+      --accent: #2c2a27;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      padding: 4rem 1.5rem 6rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ── Typography ── */
+
+    h1, h2, h3 {
+      font-family: 'Georgia Pro', Georgia, 'Times New Roman', serif;
+      font-weight: normal;
+      font-style: normal;
+      color: var(--accent);
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.15;
+      margin-bottom: 0.35rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--muted);
+      font-weight: normal;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+      margin-top: 2.5rem;
+    }
+
+    p, address {
+      font-style: normal;
+      font-size: 0.975rem;
+      color: var(--ink);
+      line-height: 1.8;
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: var(--rule);
+      transition: text-decoration-color 0.2s;
+    }
+
+    a:hover {
+      text-decoration-color: var(--ink);
+    }
+
+    /* ── Layout pieces ── */
+
+    header {
+      border-top: 2px solid var(--ink);
+      padding-top: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .stamp {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.5rem 0 0;
+    }
+
+    section {
+      padding-top: 0;
+    }
+
+    section + section {
+      border-top: 1px solid var(--rule);
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0.25rem 1.5rem;
+      padding: 2rem 0;
+    }
+
+    .row-label {
+      font-family: 'Georgia Pro', Georgia, serif;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--muted);
+      padding-top: 0.05rem;
+    }
+
+    .row-value {
+      font-size: 0.975rem;
+      line-height: 1.75;
+    }
+
+    footer {
+      margin-top: 4rem;
+      border-top: 2px solid var(--ink);
+      padding-top: 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    footer span:last-child {
+      font-family: 'Georgia Pro', Georgia, serif;
+      font-style: italic;
+    }
+
+    @media (max-width: 480px) {
+      .row {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+      }
+      .row-label {
+        font-size: 0.78rem;
+        margin-bottom: 0.15rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="stamp">Legal Notice</span>
+    <h1>Imprint</h1>
+    <h2>Information according to § 5 TMG</h2>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="row">
+        <span class="row-label">Company</span>
+        <div class="row-value">
+          <p>Studio Beispiel GmbH</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <span class="row-label">Address</span>
+        <div class="row-value">
+          <address>
+            <p>Musterstraße 12</p>
+            <p>10115 Berlin</p>
+            <p>Germany</p>
+          </address>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <span class="row-label">Contact</span>
+        <div class="row-value">
+          <p>Phone: +49 30 123 456 78</p>
+          <p>Email: <a href="mailto:hello@studio-beispiel.de">hello@studio-beispiel.de</a></p>
+          <p>Web: <a href="https://www.studio-beispiel.de">www.studio-beispiel.de</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <span class="row-label">Register</span>
+        <div class="row-value">
+          <p>Registered at Amtsgericht Berlin-Charlottenburg</p>
+          <p>HRB 123456 B</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <span class="row-label">VAT ID</span>
+        <div class="row-value">
+          <p>DE 123 456 789</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <span class="row-label">Represented by</span>
+        <div class="row-value">
+          <p>Maria Muster, Managing Director</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <span class="row-label">Responsible for content</span>
+        <div class="row-value">
+          <p>Maria Muster (address as above)</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <span class="row-label">Dispute resolution</span>
+        <div class="row-value">
+          <p>
+            The European Commission provides a platform for online dispute resolution:
+            <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">
+              ec.europa.eu/consumers/odr
+            </a>.
+            We are not obliged nor willing to participate in dispute resolution proceedings
+            before a consumer arbitration board.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Studio Beispiel GmbH · Berlin</span>
+    <span>Last updated May 2026</span>
+  </footer>
+
+</body>
+</html>
