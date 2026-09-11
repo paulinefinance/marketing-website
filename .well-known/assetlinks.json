@@ -8,7 +8,8 @@
       "namespace": "android_app",
       "package_name": "eu.pauline.mobile",
       "sha256_cert_fingerprints": [
-        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C"
+        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C",
+        "77:37:B7:A1:59:9A:7F:60:14:4B:5A:BE:BE:A5:7B:02:FF:1C:88:7B:16:E5:EB:53:38:FA:9C:70:1C:1A:1F:E2"
       ]
     }
   }
